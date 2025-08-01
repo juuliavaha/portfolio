@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
 </head>
+
 <body>
-  <h1>Tervetuloa portfoliooni!</h1>
-  <p>Tässä on ensimmäinen verkkosivuni. jee</p>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">ETUSIVU</a></li>
+      <li><a href="tietoja.html">TIETOJA MINUSTA</a></li>
+      <li><a href="projektit.html">PROJEKTIT</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="yhteys.html">YHTEYS</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="kuvajateksti">
+      <div class="aloitusteksti">
+        <h1>Juulia Vähä</h1>
+        <h2>Tietojenkäsittelyn opiskelija</h2>
+        <p>Hei, olen Juulia Vähä ja opiskelen kolmatta vuotta tietojenkäsittelyä Kaakkois-Suomen ammattikorkeakoulussa.</p>
+        <div class="linkkilaatikot">
+          <a href="projektit.html" class="button1">PROJEKTIT</a>
+          <a href="cv.html" class="button2">CV</a>
+        </div>
+      </div>
+      <img src="img/portfolioimg.jpg" alt="Juulian kuva" />
+    </div>
+  </div>
 </body>
-</html>
