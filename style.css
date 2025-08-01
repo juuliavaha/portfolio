@@ -60,12 +60,13 @@ p {
 
 img.cv-kuva {
   display: block;      
-  margin: 0 auto;     
-  max-width: 800px; 
-  width: 100%;
+  margin: 0;      
+  width: 800px;
   height: auto; 
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .navbar {
@@ -136,3 +137,4 @@ img.cv-kuva {
 .button2:hover {
   background-color: #97a6a8;
 }
+
