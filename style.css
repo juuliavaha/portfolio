@@ -187,3 +187,11 @@ li {
    color: white;
 
 }
+
+.container img {
+  max-width: 800px; 
+  width: 100%;      
+  height: auto;
+  margin-bottom: 50px;
+  
+}
