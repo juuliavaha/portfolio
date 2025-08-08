@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(75, 73, 69);
+  background: linear-gradient(to bottom right, #c9c8c8, #f9f9f9);
   color: #333;
   text-align: left;
   margin: 0;
@@ -24,19 +24,19 @@ h1 {
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.2rem;
-  color: rgb(245, 186, 147);
+  color: rgb(66, 66, 66);
   margin-top: 0.2rem;
   margin-bottom: 3rem;
 }
 
 p {
    margin-bottom: 3rem;
-   color: white;
+   color: rgb(66, 66, 66);
    font-size: 1rem;
    font-family: 'Montserrat', sans-serif;
-   font-weight: 300;
+   font-weight: 400;
 }
 
 .aloitusteksti {
@@ -53,8 +53,8 @@ p {
   gap: 100px;
 }
 
-.kuvajateksti img {
-  width: 500px;
+.etusivu .kuvajateksti img {
+  width: 500px
 }
 
 img.cv-kuva {
@@ -69,10 +69,11 @@ img.cv-kuva {
 }
 
 .navbar {
-  background-color: #5a5856;
+  background-color: rgb(194, 193, 193);
   padding: 25px 20px;
   display: flex;
   justify-content: flex-end;
+  border-bottom: 1px solid white;
 }
 
 .nav-links {
@@ -87,20 +88,27 @@ img.cv-kuva {
 .nav-links li a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  color: rgb(235, 222, 206);
+  color: white;
   text-decoration: none;
   font-size: 0.9rem;
+  transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #97a6a8;
+  color: rgb(185, 68, 68);
+}
+
+.nav-links li a.active {
+  color: rgb(185, 68, 68);
+  border-bottom: 1px solid rgb(185, 68, 68);
+  padding: 5px 8px;
 }
 
 .button1 {
   display: inline-block;
   width: 120px;
-  background-color: rgb(150, 207, 216);
-  color: black;
+  background-color: rgb(185, 68, 68);
+  color: white;
   padding: 10px 20px;
   margin: 5px;
   text-decoration: none;
@@ -109,6 +117,7 @@ img.cv-kuva {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
+  border-radius: 10px;
 }
 
 .button1:hover {
@@ -118,9 +127,9 @@ img.cv-kuva {
 .button2 {
   display: inline-block;
   width: 120px;
-  background-color: rgb(75, 73, 69);
-  border: 1px solid rgb(150, 207, 216);
-  color: rgb(150, 207, 216);
+  background-color: transparent;
+  border: 1px solid rgb(185, 68, 68);;
+  color: rgb(185, 68, 68);
   padding: 10px 20px;
   margin: 5px;
   text-decoration: none;
@@ -129,7 +138,9 @@ img.cv-kuva {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
+  border-radius: 10px;
 }
+
 
 .button2:hover {
   background-color: #97a6a8;
@@ -143,7 +154,8 @@ img.cv-kuva {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 1.5rem;
-  background-color: #5a5856;
+  background-color: rgb(194, 193, 193);
+  border-top: 1px solid white;
 }
 
 .kuvaosio {
@@ -158,7 +170,7 @@ img.cv-kuva {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 1.5rem;
-  background-color: #5a5856;
+  background-color: transparent;
   border-radius: 12px;
 }
 
@@ -188,7 +200,7 @@ li {
 
 }
 
-.container img {
+.muut .container img {
   max-width: 800px; 
   width: 100%;      
   height: auto;
