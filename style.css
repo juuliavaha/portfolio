@@ -20,6 +20,7 @@ h1 {
   color: white;
   margin-bottom: 0.5rem;
   margin-top: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 h2 {
@@ -29,14 +30,20 @@ h2 {
   color: rgb(66, 66, 66);
   margin-top: 0.2rem;
   margin-bottom: 3rem;
+  
+}
+
+h3 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 p {
-   margin-bottom: 3rem;
+   margin-bottom: 2rem;
    color: rgb(66, 66, 66);
    font-size: 1rem;
    font-family: 'Montserrat', sans-serif;
    font-weight: 400;
+   line-height: 1.7;
 }
 
 .aloitusteksti {
@@ -57,23 +64,31 @@ p {
   width: 500px
 }
 
+.linkkilaatikot {
+  margin-top: 50px;
+}
+
+
 img.cv-kuva {
   display: block;      
-  margin: 0;      
+  margin: 0 auto;      
   width: 800px;
   height: auto; 
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
+
+/* Navigaatio */
 
 .navbar {
   background-color: rgb(194, 193, 193);
-  padding: 25px 20px;
+  padding: 18px 20px;
   display: flex;
   justify-content: flex-end;
   border-bottom: 1px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .nav-links {
@@ -100,9 +115,10 @@ img.cv-kuva {
 
 .nav-links li a.active {
   color: rgb(185, 68, 68);
-  border-bottom: 1px solid rgb(185, 68, 68);
-  padding: 5px 8px;
+  
 }
+
+/*Napit */
 
 .button1 {
   display: inline-block;
@@ -118,17 +134,18 @@ img.cv-kuva {
   font-weight: 400;
   font-size: 0.9rem;
   border-radius: 10px;
+  
 }
 
 .button1:hover {
-  background-color: #97a6a8;
+  background-color: rgb(133, 53, 53);
 }
 
 .button2 {
   display: inline-block;
   width: 120px;
   background-color: transparent;
-  border: 1px solid rgb(185, 68, 68);;
+  border: 1px solid rgb(161, 61, 61);;
   color: rgb(185, 68, 68);
   padding: 10px 20px;
   margin: 5px;
@@ -139,13 +156,41 @@ img.cv-kuva {
   font-weight: 400;
   font-size: 0.9rem;
   border-radius: 10px;
+  
 }
 
 
 .button2:hover {
-  background-color: #97a6a8;
+  background-color: rgb(196, 194, 194);
 }
 
+.button3 {
+  display: inline-block;
+  width: 120px;
+  background-color: transparent;
+  border: 1px solid rgb(161, 61, 61);;
+  color: rgb(185, 68, 68);
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;   
+  left: 20px;     
+  z-index: 1000;
+
+}
+
+.button3:hover {
+  background-color: rgb(196, 194, 194);
+}
+
+/* Projektit */
 
 .projektiosio {
   padding: 40px 0;
@@ -156,6 +201,7 @@ img.cv-kuva {
   font-size: 1.5rem;
   background-color: rgb(194, 193, 193);
   border-top: 1px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .kuvaosio {
@@ -207,3 +253,45 @@ li {
   margin-bottom: 50px;
   
 }
+
+/* Esittely */
+
+.esittely .esittely-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 1200px;
+}
+
+.esittely .content {
+  flex: 1;
+  min-width: 250px;
+  text-align: justify;
+  margin-bottom: 50px;
+  
+}
+
+.esittely .esittelykuva {
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid white;
+  object-fit: cover;
+  margin-left: 50px;
+}
+
+.esittely h1 {
+  max-width: 1200px;
+  margin: 40px auto 10px auto;
+
+}
+
+.esittely .content a.button1 {
+  display: block;
+  width: max-content;
+  margin: 5px auto 0 auto;
+}
+
