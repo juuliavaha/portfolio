@@ -11,6 +11,8 @@ body {
   min-height: 100vh;
 }
 
+/* vaihtoehto background: linear-gradient(to bottom right, #c9c8c8, #f9f9f9); */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -345,7 +347,9 @@ li {
 /* Yhteys */
 
 .yhteys .container {
-  min-width: 1300px;
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .yhteystiedot {
@@ -353,7 +357,7 @@ li {
 }
 
 
-/*Footer*/
+/* Footer */
 
 .footer {
   width: 100%;
@@ -365,3 +369,194 @@ li {
   border-top: 1px solid white;
 }
 
+/* Media */
+
+@media (max-width: 1200px) {
+  .tool-list {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .esittely .kuva-ja-tyokalut {
+    margin-left: 0;
+  }
+
+  .nav-links {
+    margin-right: 30px;
+    gap: 30px;
+  }
+
+  img.cv-kuva {
+    width: 100%;
+  }
+
+  .kuvajateksti {
+    gap: 40px;
+  }
+
+  .esittely .esittely-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .esittely .content,
+  .esittely .kuva-ja-tyokalut {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+    align-items: flex-end;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .kuvajateksti {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .etusivu .kuvajateksti img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .tool-list {
+    columns: 1;
+    width: 100%;
+  }
+
+  .button1,
+  .button2,
+  .button3 {
+    width: 100%;
+    max-width: 250px;
+    font-size: 0.8rem;
+    padding: 12px 0;
+  }
+
+  .button3 {
+    position: static;
+    margin-top: 30px;
+  }
+
+  .kuvaosio {
+    gap: 40px;
+  }
+
+  .yhteys .container {
+    min-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .nav-links li a {
+    font-size: 0.875rem;
+  }
+
+  .kuva-ja-tyokalut p {
+    font-size: 0.875rem;
+  }
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    background-color: rgb(199, 198, 198);
+    position: fixed;
+    top: 35px;   /* juuri hamburgerin alapuolelle */
+    right: 0;
+    left: 0;
+    height: 35vh;
+
+    padding-top: 30px; /* siirtää linkkejä hieman ylemmäs */
+    box-sizing: border-box;
+    border-radius: 0;
+    box-shadow: none;
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    transition: max-height 0.8s ease-out, opacity 0.8s ease-out;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+
+
+  .nav-links.active {
+    max-height: 50vh;
+    opacity: 1;
+    overflow: auto;
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    height: 50px;
+  }
+
+  .hamburger .bar {
+    width: 25px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1px;
+    transition: all 0.4s ease;
+  }
+
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+}
