@@ -9,9 +9,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
 }
 
-/* vaihtoehto background: linear-gradient(to bottom right, #c9c8c8, #f9f9f9); */
+
 
 .container {
   max-width: 1200px;
@@ -28,6 +29,7 @@ h1 {
   margin-bottom: 0.5rem;
   margin-top: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  word-break: break-word;
 }
 
 h2 {
@@ -59,6 +61,14 @@ p {
    font-family: 'Montserrat', sans-serif;
    font-weight: 400;
    line-height: 1.7;
+}
+
+a {
+  color: rgb(185, 68, 68);
+}
+
+.muut li {
+  color:  rgb(66, 66, 66);
 }
 
 .aloitusteksti {
@@ -94,6 +104,8 @@ img.cv-kuva {
   margin-top: 30px;
   margin-bottom: 70px;
 }
+
+
 
 /* Navigaatio */
 
@@ -219,6 +231,10 @@ img.cv-kuva {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+.kuvaosio p {
+  font-weight: 500;
+}
+
 .kuvaosio {
   max-width: 1000px;
   margin: 30px auto; 
@@ -235,8 +251,11 @@ img.cv-kuva {
   border-radius: 12px;
 }
 
+
+
 .kuvakortti img {
   width: 100%;
+  max-width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -268,6 +287,13 @@ li {
   margin-bottom: 50px;
   
 }
+
+.muut .container,
+.cv-sivu .container,
+.yhteys .container {
+  margin-top: 50px;
+}
+
 
 
 /* Esittely */
@@ -346,21 +372,19 @@ li {
 
 /* Yhteys */
 
-.yhteys .container {
-  max-width: 1300px;
-  width: 100%;
-  padding: 0 20px;
-}
 
 .yhteystiedot {
   margin-top: 60px;
+}
+
+.yhteys .container {
+  margin: 60px 0 0 300px;
 }
 
 
 /* Footer */
 
 .footer {
-  width: 100%;
   background-color: #e4e4e4;
   color: #eee;
   text-align: center;
@@ -403,6 +427,11 @@ li {
   .esittely .kuva-ja-tyokalut {
     margin-left: 0;
   }
+
+  .yhteys .container {
+  margin: 50px 0 0 200px;
+}
+
 }
 
 @media (max-width: 768px) {
@@ -465,15 +494,21 @@ li {
   }
 
   .yhteys .container {
-    min-width: 100%;
-    padding: 0 20px;
-  }
+  margin: 50px 0 0 0px;
 }
 
+
+}
+
+/* Mobiili */
+
 @media (max-width: 480px) {
+
+
   h1 {
     font-size: 2.2rem;
-  }
+    max-width: 100%;
+}
 
   h2 {
     font-size: 1rem;
@@ -481,6 +516,7 @@ li {
 
   p {
     font-size: 0.9rem;
+    line-height: 2;
   }
 
   .nav-links li a {
@@ -560,14 +596,72 @@ li {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+.button1, .button2 {
+  padding: 12px;
+}
+
+
 .button3 {
   display: block;
-  margin: 40px auto 0 auto; /* ylhäältä vähän tilaa, ja keskitys */
+  margin: 40px auto 0 auto;
   width: 80%;
   max-width: 250px;
   padding: 12px 0;
   text-align: center;
   margin-bottom: 10px;
+}
+
+ .esittely .content {
+    order: 1;
+    margin: 0 20px 30px 20px;
+    text-align: left;
+  }
+
+  .esittely .kuva-ja-tyokalut {
+    order: 2;
+    margin: 0 20px;
+    max-width: 100%;
+  }
+
+  .esittely .esittelykuva {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px auto;
+  }
+
+  .tool-list {
+    width: 100%;
+    columns: 2;
+    column-gap: 20px;
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .esittely .content a.button1 {
+    margin: 20px auto 0 auto;
+  }
+
+   .kuvaosio {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px 20px;
+    max-width: 100%;
+  }
+
+  .muut .kuvakortti a p {
+
+  margin-top: -25px;  
+  margin-bottom: 50px;   
+  font-weight: 600;
+       
+  }
+
+  .muut li {
+    font-size: 0.9rem;
+  }
+
+.yhteys .container {
+  margin: 50px 0 0 0px;
 }
 
 }
