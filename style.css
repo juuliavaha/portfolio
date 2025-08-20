@@ -53,6 +53,15 @@ h4 {
   color: rgb(66, 66, 66);
 }
 
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: rgb(66, 66, 66);
+  margin-bottom: 10px;
+}
+
+
 
 p {
    margin-bottom: 2rem;
@@ -103,6 +112,10 @@ img.cv-kuva {
   border-radius: 5px;
   margin-top: 30px;
   margin-bottom: 70px;
+}
+
+.palautelaatikko {
+  border-top: 1px solid white;
 }
 
 

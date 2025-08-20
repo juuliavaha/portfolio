@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Esittely</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
 </head>
 <body class="muut">
@@ -43,16 +44,22 @@
     <a href="loppuraportti.pdf" download class="button1">Lataa loppuraportti (PDF)</a>
 
     <br><br><br><br>
-    <p><strong>Opettajan palaute</strong></p>
+    <div class="palautelaatikko">
+  <h5><strong>Opettajan palaute</strong></h5>
+  <p>(avaa kuva klikkaamalla)</p>
+    <a href="img/GSPalaute.png" class="lightbox-link">
     <img src="img/GSPalaute.png" alt="Palaute">
+    </a>
 
     <a href="index.html" class="button3">Takaisin etusivulle</a>
+    </div>
   </div>
 
 <footer class="footer">
 <p>© 2025 Juulia Vähä</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
