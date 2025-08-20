@@ -280,6 +280,10 @@ li {
 
 }
 
+.listat li {
+  margin-bottom: 15px;
+}
+
 .muut .container img {
   max-width: 800px; 
   width: 100%;      
