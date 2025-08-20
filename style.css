@@ -298,6 +298,11 @@ li {
   margin-top: 50px;
 }
 
+.muut .container img.videopalaute {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
 
 
 /* Esittely */
