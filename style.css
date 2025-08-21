@@ -404,6 +404,11 @@ li {
 
 .yhteystiedot {
   margin-top: 60px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 320px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .yhteys .container {
