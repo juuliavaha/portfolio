@@ -5,11 +5,7 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
   hamburger.classList.toggle('active'); 
 
-   if (navLinks.classList.contains('active')) {
-    document.body.style.overflow = 'hidden';  
-  } else {
-    document.body.style.overflow = '';        
-  }
+  
 });
 
 document.querySelectorAll('.lightbox-link').forEach(link => {
