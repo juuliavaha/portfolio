@@ -584,6 +584,10 @@ li {
     gap: 40px;
   }
 
+  .projektiosio {
+    padding: 30px;
+  }
+
   .yhteys .container {
   margin: 50px 0 0 0px;
 }
@@ -741,6 +745,10 @@ li {
     gap: 30px;
     padding: 20px 20px;
     max-width: 100%;
+  }
+
+  .projektiosio {
+    padding: 30px;
   }
 
   .muut .kuvakortti a p {
