@@ -647,7 +647,7 @@ li {
 
 
   .nav-links.active {
-    max-height: 50vh;
+    max-height: 50dvh;
     opacity: 1;
     overflow: auto;
   }
