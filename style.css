@@ -499,7 +499,6 @@ li {
 
 }
 
-
 /* Tabletit */
 
 @media (min-width: 769px) and (max-width: 1199px) {
@@ -571,6 +570,9 @@ li {
 
   
 }
+
+
+
 
 @media (max-width: 768px) {
   
