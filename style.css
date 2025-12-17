@@ -64,7 +64,7 @@ h5 {
 
 
 p {
-   margin-bottom: 2rem;
+   margin-bottom: 1rem;
    color: rgb(66, 66, 66);
    font-size: 1rem;
    font-family: 'Montserrat', sans-serif;
@@ -118,6 +118,9 @@ img.cv-kuva {
   border-top: 1px solid white;
 }
 
+.side-image {     
+  margin-right: 40px; 
+}
 
 
 /* Navigaatio */
@@ -305,17 +308,18 @@ li {
 }
 
 .muut .container img {
-  max-width: 800px; 
-  width: 100%;      
-  height: auto;
+  max-width: 800px;  
+  max-height: 500px; 
+  width: auto;        
+  height: auto;      
   margin-bottom: 50px;
-  
 }
 
 .muut .container,
 .cv-sivu .container,
 .yhteys .container {
   margin-top: 50px;
+  max-width: 1000px
 }
 
 .muut .container img.videopalaute {
@@ -416,6 +420,7 @@ li {
 .yhteys .container {
   margin: 60px 0 0 300px;
 }
+
 
 
 /* Footer */
