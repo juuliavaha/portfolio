@@ -308,10 +308,10 @@ li {
 }
 
 .muut .container img {
-  max-width: 800px;  
-  max-height: 500px; 
-  width: auto;        
-  height: auto;      
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
   margin-bottom: 50px;
 }
 
@@ -328,8 +328,18 @@ li {
   height: auto;
 }
 
+.muut .image-row {
+  display: flex;
+  gap: 50px;       
+  flex-wrap: wrap; 
+  margin: 20px 0;
+}
 
-
+.muut .image-row img {
+  width: 30%;      
+  height: auto;
+  object-fit: cover;
+}
 
 /* Esittely */
 
@@ -839,5 +849,14 @@ li {
 .yhteys .container {
   margin: 50px 0 0 0px;
 }
+
+.muut .image-row {
+    flex-direction: column;
+  }
+
+  .muut .image-row img {
+    width: 100% !important;
+    max-width: 100%;
+  }
 
 }
