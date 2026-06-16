@@ -308,8 +308,7 @@ li {
 }
 
 .muut .container img {
-  max-width: 800px;  
-  max-height: 500px; 
+  max-width: 100%;
   width: auto;        
   height: auto;      
   margin-bottom: 50px;
