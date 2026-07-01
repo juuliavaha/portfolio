@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Esittely</title>
+  <title>Restaurating</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
@@ -30,28 +30,49 @@
       <h1>Restaurating</h1>
       <p><strong>Ravintoloiden arvostelusovellus</strong></p>
       <br>
-      <p>Tässä projektissa toteutin React Nativella ravintoloiden arvostelusovelluksen, jonka avulla käyttäjä voi tallentaa ja hallinnoida ravintola-arvosteluja.</p>
-<p>Sovelluksessa on kolme välilehteä "À la carte", "Fine Dining" ja "Street Food", joista jokainen näyttää vain oman kategoriansa arvostelut käyttöliittymässä. Kortin voi poistaa swaippaamalla vasemmalle, jolloin poistopainike tulee näkyviin. Mistä tahansa välilehdeltä pääsee lisäämään uuden arvostelun.</p>
+      <p>Tässä projektissa toteutin React Nativella ravintoloiden arvostelusovelluksen mobiiliin, jonka avulla käyttäjä voi tallentaa ja hallinnoida ravintola-arvosteluja.</p>
+<p>Projektin tavoitteena oli toteuttaa kokonaisuus, jossa yhdistyvät paikallinen tietokanta, mobiililaitteen ominaisuuksien hyödyntäminen sekä selkeä ja käyttäjäystävällinen käyttöliittymä. Käyttöliittymäsuunnittelussa käytin apuna Figmaa.</p>
+<p>Sovellus hyödyntää SQLite-tietokantaa, johon arvostelut tallennetaan paikallisesti ilman erillistä palvelinta. Arvostelut luokitellaan kolmeen kategoriaan (À la Carte, Fine Dining ja Street Food), ja käyttöliittymä suodattaa tiedot dynaamisesti valitun kategorian perusteella.</p>
+<p>Arvostelujen lisääminen on toteutettu erillisellä lomakenäkymällä, joka avataan React Navigationin Stack Navigatorin avulla. Lomakkeessa käyttäjä voi tallentaa ravintolan nimen, kommentin, tähtiarvosanan, sijainnin sekä kuvan. Pakolliset kentät validoidaan ennen tietojen tallentamista tietokantaan.</p>
 <br>
 <div class="image-row">
-  <img src="img/restauratingalacarte.jpeg" alt="Sovelluksen näkymä">
-  <img src="img/restauratingdelete.jpeg" alt="Sovelluksen näkymä">
+  <img src="../img/restauratingalacarte.jpeg" alt="Sovelluksen näkymä">
+  <img src="../img/restauratingdelete.jpeg" alt="Sovelluksen näkymä">
 </div>
-<p>Arvostelut luodaan erillisellä lomakkeella, johon täytetään nimi, valitaan kategoria, kirjoitetaan kommentti, valitaan arvosana. Halutessaan haetaan sijainti ja lisätään kuva. Kuvan voi ottaa valinnan mukaan kameralla tai valita kirjastosta.</p>
+<p>Kuvan voi ottaa valinnan mukaan kameralla tai valita kirjastosta.</p>
 <p>Paikannuslupa ja kuva-/kamerankäyttölupa kysytään käyttäjältä näitä toimintoja käytettäessä. Nimi, kategoria ja arvosana ovat pakollisia täyttää, muut tiedot ovat valinnaisia. Tietojen puuttumisesta seuraa virheilmoitus. </p>
 <br>
 <div class="image-row">
-  <img src="img/restauratingreview.jpeg" alt="Sovelluksen näkymä">
-  <img src="img/restauratingreviewform.jpeg" alt="Sovelluksen näkymä">
+  <img src="../img/restauratingreview.jpeg" alt="Sovelluksen näkymä">
+  <img src="../img/restauratingreviewform.jpeg" alt="Sovelluksen näkymä">
 </div>
 
-<p><strong>Käytetyt teknologiat:</strong><br><br>
-React Native (TypeScript), Expo, SQLite
-</p>
+<p><strong>Käytetyt teknologiat:</strong></p>
+<ul class="listat">
+  <li>React Native</li>
+<li>TypeScript</li>
+<li>Expo</li>
+<li>SQLite</li>
+<li>React Navigation (Stack Navigator & Bottom Tabs)</li>
+<li>Expo Location</li>
+<li>Expo Image Picker</li>
+<li>Expo Camera</li></ul>
 <br>
 <p><strong>Pääset sovelluksen GitHub repositorioon <a href="https://github.com/juuliavaha/restaurating.git" target="_blank">tästä</a>.</strong></p>
  <br>
+
+ <div class="palautelaatikko">
+  <h5><strong>Opettajan palaute</strong></h5>
+  <p>(avaa kuva klikkaamalla)</p>
+
+  <a href="../img/Palaute_Restaurating.png" class="lightbox-link">
+  <img src="../img/Palaute_Restaurating.png" alt="Palaute">
+  </a>
+  </div>
+
  </div>
+
+ 
 
   <a href="index.html" class="button3">Takaisin etusivulle</a>
 

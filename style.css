@@ -13,7 +13,6 @@ body {
 }
 
 
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -129,18 +128,17 @@ img.cv-kuva {
   background-color: rgb(194, 193, 193);
   padding: 18px 20px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   border-bottom: 1px solid white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .nav-links {
   list-style: none;
-  margin: 0;
+  margin: 5px;
   padding: 0;
   display: flex;
   gap: 70px;
-  margin-right: 120px;
 }
 
 .nav-links li a {
@@ -160,6 +158,69 @@ img.cv-kuva {
   color: rgb(185, 68, 68);
   
 }
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.lang-switch {
+  margin-left: 20px;
+}
+
+.lang-switch a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+}
+
+.lang-switch a:hover {
+  color: rgb(185, 68, 68);
+}
+
+.lang-switch a.active {
+  color: rgb(185, 68, 68);
+}
+
+
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.github-icon {
+  width: 30px;
+  height: auto;
+}
+
+.github-icon:hover {
+  transform: scale(1.1);
+}
+
+.github-text-icon {
+  width: 100px;
+  height: auto;
+}
+
+.github-text-icon:hover {
+  transform: scale(1.1);
+}
+
+.LI-icon {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.LI-icon:hover {
+  transform: scale(1.1);
+}
+
 
 /*Napit */
 
@@ -420,6 +481,7 @@ li {
 
 .yhteystiedot {
   margin-top: 60px;
+  margin-bottom: 80px;
   background-color: white;
   border-radius: 5px;
   padding: 20px;
@@ -439,7 +501,7 @@ li {
   background-color: #e4e4e4;
   color: #eee;
   text-align: center;
-  padding: 10px 5px;
+  padding: 15px 5px;
   font-size: 0.9rem;
   border-top: 1px solid white;
 }
@@ -854,9 +916,15 @@ li {
     flex-direction: column;
   }
 
-  .muut .image-row img {
+.muut .image-row img {
     width: 100% !important;
     max-width: 100%;
   }
+
+.github-icon {
+  width: 30px;
+  height: auto;
+}
+
 
 }

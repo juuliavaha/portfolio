@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Esittely</title>
+  <title>FoodiePlanner</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
@@ -27,11 +27,11 @@
   </nav>
 
   <div class="container">
-      <h1>Sovellusohjelmointi</h1>
+      <h1>Foodie Planner</h1>
       <p><strong>Henkilökohtainen kaloriseurantasovellus</strong></p>
 <p>
   <br>
-  <strong>Foodie Planner</strong> on sovellusohjelmoinnin kurssilla toteutettu soveltava harjoitustyö, jonka tavoitteena oli osoittaa osaamista kurssin keskeisistä aiheista. Aihe valittiin itse. Projektissa arvioitiin aiheen valintaa, teknistä toteutusta ja sovelluksen julkaisemista.
+  <strong>Foodie Planner</strong> on Reactilla ja TypeScriptillä toteutettu web-sovellus, jonka avulla käyttäjä voi seurata päivittäistä energiankulutustaan sekä hallita ruokapäiväkirjaa.
 </p>
 
 <p>
@@ -39,6 +39,18 @@
 </p>
  <br>
 <img src="img/SO.png" alt="Sovelluksen näkymä">
+
+<p>Aterioiden hallinta on toteutettu komponenttipohjaisesti. Käyttäjä voi lisätä ja poistaa aterioita, ja jokaiselle aterialle on määritelty yksilöllinen tunniste (UUID), jota käytetään hallinnassa.
+
+Sovellus laskee automaattisesti ruokapäiväkirjan kokonaiskalorit aina, kun aterioita lisätään tai poistetaan.
+
+Tiedot tallennetaan localStorageen, jolloin ruokapäiväkirja säilyy selaimen päivityksen jälkeen ilman erillistä backend-palvelinta.</p>
+
+<p>Käyttöliittymä on toteutettu Material UI -komponenteilla, ja se sisältää muun muassa Select-valinnat, Drawer-valikon sekä responsiivisen listanäkymän.
+
+Sovelluksessa on lisäksi erillinen reseptinäkymä, jossa käyttäjä voi tarkastella aterioiden ainesosia ja valmistusohjeita.</p>
+
+<br>
 <p><strong>Keskeiset ominaisuudet:</strong></p>
 <ul class="listat">
   <li>Kulutuslaskuri (ikä, pituus, paino, sukupuoli, aktiivisuustaso - BMR + aktiivisuuskerroin)</li>
@@ -48,14 +60,19 @@
   <li>Moderni käyttöliittymä Material UI -komponenteilla (valikot, tekstikentät, napit, Drawer-valikko)</li>
 </ul><br>
 
-<p><strong>Käytetyt teknologiat:</strong><br><br>
-React (TypeScript), Material UI, localStorage
-</p>
+<p><strong>Käytetyt teknologiat:</strong></p>
+ <ul class="listat">
+  <li>React (TypeScript)</li>
+  <li>Material UI</li>
+  <li>localStorage</li>
+  <li>UUID</li>
+  <li>React state-hallinta</li>
+ </ul> 
 <br>
 
 <p><strong>
 Sovellus on julkaistu GitHub Pages -palvelussa. Pääset kokeilemaan sitä <a href="https://fjusa016xamk.github.io/foodieplanner/" target="_blank">tästä</a>.
-</p></strong><br>
+</strong></p><br>
 
 <div class="palautelaatikko">
 <h5><strong>Opettajan palaute</strong></h5>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esittely</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="muut">
+  <nav class="navbar">
+
+    <div class="hamburger" id="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="tietoja.html">ABOUT</a></li>
+      <li><a href="projektit.html" class="active">PROJECTS</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="yhteys.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+      <h1>Foodie Planner</h1>
+      <p><strong>Personal Calorie Tracking Application</strong></p>
+<p>
+  <br>
+  <strong>Foodie Planner</strong> Foodie Planner is a web application built with React and TypeScript that allows users to track their daily energy expenditure and manage a food diary.
+</p>
+
+<p>
+  The purpose of the application is to help users monitor their daily energy consumption and compare it with the calories from consumed meals. Users can calculate their total daily energy expenditure and build a food diary from predefined meals.
+</p>
+ <br>
+<img src="../img/SO.png" alt="Sovelluksen näkymä">
+
+<p>Meal management is implemented using a component-based structure. Users can add and remove meals, and each meal has a unique identifier (UUID) used for management purposes. The application automatically calculates the total calories in the food diary whenever meals are added or removed. All data is stored in localStorage, so the diary persists even after refreshing the browser without a separate backend service.</p>
+<p>The user interface is built with Material UI components and includes features such as Select inputs, a navigation Drawer, and a responsive list view. The application also includes a separate recipe view where users can check ingredients and preparation instructions for each meal.</p>
+
+<p><strong>Key Features</strong></p>
+<ul class="listat">
+  <li>Energy expenditure calculator (age, height, weight, gender, and activity level using the BMR formula and an activity multiplier)</li>
+  <li>Food diary with the ability to add and remove meals</li>
+  <li>Meal list and recipe page displaying the calorie content of each meal</li>
+  <li>Data stored locally in the browser using localStorage</li>
+  <li>Modern user interface built with Material UI components, including menus, text fields, buttons, and a navigation drawer</li>
+</ul><br>
+
+<p><strong>Technologies Used</strong></p>
+<ul class="listat">
+<li>React (TypeScript)</li>
+<li>Material UI</li>
+<li>localStorage</li>
+<li>UUID</li>
+<li>React state management</li>
+</ul>
+<br>
+
+<p><strong>
+The application has been deployed on GitHub Pages. You can try it <a href="https://fjusa016xamk.github.io/foodieplanner/" target="_blank">here</a>.
+</p></strong><br>
+
+<div class="palautelaatikko">
+<h5><strong>Instructor's Feedback</strong></h5><p>(Only in Finnish)</p>
+ <p>(Click the image to enlarge.)</p>
+
+<a href="../img/SOPalaute.png" class="lightbox-link">
+<img src="../img/SOPalaute.png" alt="Palaute">
+</a>
+
+</div>
+
+  </div>
+
+  <a href="index.html" class="button3">Back to Home</a>
+
+<footer class="footer">
+<p>© 2025 Juulia Vähä</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>
