@@ -769,6 +769,10 @@ li {
     font-size: 0.875rem;
   }
 
+  .navbar {
+    position: relative;
+  }
+
 .nav-links {
     display: flex;
     flex-direction: column;
@@ -806,6 +810,16 @@ li {
     opacity: 1;
     overflow: visible;
   }
+
+  .left {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 1100;
+}
 
   .hamburger {
     position: absolute;
