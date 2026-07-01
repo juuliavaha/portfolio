@@ -346,11 +346,13 @@ img.cv-kuva {
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+  border: solid white 1px;
 }
 
 .kuvakortti img:hover {
   transform: scale(1.1);
 }
+
 
 .kuvakortti a {
   text-decoration: none;
