@@ -6,16 +6,19 @@ The website was built entirely from scratch without using any pre-made templates
 
 Features
 
-Fully custom design (no templates used)
-Responsive layout for different screen sizes
-Clean and minimal user interface
-Interactive elements implemented with JavaScript
-Project showcase section
-Contact and information sections
+- Fully custom design (no templates used)
+- Responsive layout for different screen sizes
+- Clean and minimal user interface
+- Interactive elements implemented with JavaScript
+- Project showcase section
+- Contact and information sections
+
+  
 Technologies Used
-HTML
-CSS
-JavaScript
+
+- HTML
+- CSS
+- JavaScript
 
 
 Purpose
